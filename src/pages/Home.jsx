@@ -27,7 +27,7 @@ function Home() {
 		{/* Watching Section */}
 		{groupedAnimes.Watching.length > 0 && (
 			<section>
-			<h2 className="text-xl font-semibold text-gray-800">Watching</h2>
+		<h2 className="text-xl font-semibold text-gray-800 my-6">Watching</h2>
 			<div>
 				{groupedAnimes.Watching.map((anime) => (
 				<AnimeItem key={anime.id} anime={anime} />
@@ -39,7 +39,7 @@ function Home() {
 		{/* Completed Section */}
 		{groupedAnimes.Completed.length > 0 && (
 			<section>
-			<h2 className="text-xl font-semibold text-gray-800">Completed</h2>
+		<h2 className="text-xl font-semibold text-gray-800 my-6">Completed</h2>
 			<div>
 				{groupedAnimes.Completed.map((anime) => (
 				<AnimeItem key={anime.id} anime={anime} />
@@ -51,7 +51,7 @@ function Home() {
 		{/* Planning to Watch Section */}
 		{groupedAnimes["Planning to Watch"].length > 0 && (
 			<section>
-			<h2 className="text-xl font-semibold text-gray-800">Planning to Watch</h2>
+		<h2 className="text-xl font-semibold text-gray-800 my-6">Planning to Watch</h2>
 			<div>
 				{groupedAnimes["Planning to Watch"].map((anime) => (
 				<AnimeItem key={anime.id} anime={anime} />
@@ -63,7 +63,7 @@ function Home() {
 		{/* Dropped Section */}
 		{groupedAnimes.Dropped.length > 0 && (
 			<section>
-			<h2 className="text-xl font-semibold text-gray-800">Dropped</h2>
+		<h2 className="text-xl font-semibold text-gray-800 my-6">Dropped</h2>
 			<div>
 				{groupedAnimes.Dropped.map((anime) => (
 				<AnimeItem key={anime.id} anime={anime} />
