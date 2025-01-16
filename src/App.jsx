@@ -65,10 +65,6 @@ function App() {
     <>
       <AnimeProvider value={{ animes, addAnime, updateAnime, deleteAnime }}>
 	  	<Header exportAnimes={exportAnimes} importAnimes={importAnimes} />
-	  	{/* <button onClick={exportAnimes} className="export-btn">
-        	Export Animes
-    	</button>
-		<input type="file" onChange={importAnimes} className="import-btn" /> */}
         <RouterProvider router={router} />
       </AnimeProvider>
     </>
