@@ -25,29 +25,29 @@ function AnimeItem({ anime }) {
           <input
             type="text"
             value={animeName}
-            onChange={(e) => setAnimeName(e.target.value)} // Update anime name state
-            className="text-xl font-bold border-b-2 border-gray-300"
+            onChange={(e) => setAnimeName(e.target.value)}
+            className="text-xl bg-gray-100 px-4 py-1 w-full"
           />
         ) : (
           <Link to={`/anime/${anime.id}`} className="text-xl font-bold">
             {anime.anime}
           </Link>
         )}
-        <p className="text-gray-500">{anime.progress}</p>
+        {/* <p className="text-gray-500">{anime.progress}</p> */}
       </div>
 
-      <div className="flex space-x-2">
+      <div>
         {isEditing ? (
-          <button onClick={handleUpdateAnime} className="bg-gray-950 text-white px-4 py-1 text-sm">
+          <button onClick={handleUpdateAnime} className="text-gray-950 font-semibold bg-white px-4 py-1 text-sm">
             Save
           </button>
         ) : (
-          <button onClick={() => setIsEditing(true)} className="bg-gray-950 text-white px-4 py-1 text-sm">
+          <button onClick={() => setIsEditing(true)} className="text-gray-950 font-semibold bg-white px-4 py-1 text-sm">
             Edit
           </button>
         )}
 
-        <button onClick={handleDelete} className="bg-red-600 text-white px-4 py-1 text-sm">
+        <button onClick={handleDelete} className="text-red-600 font-semibold bg-white px-4 py-1 text-sm">
           Delete
         </button>
       </div>

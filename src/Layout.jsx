@@ -9,7 +9,7 @@ function Layout() {
 				<Header />
 			</div> */}
 
-			<div className="flex-grow w-[80%] md:w-[80%] mx-auto">
+			<div className="flex-grow w-[80%] md:w-[60%] mx-auto">
 				<Outlet />
 			</div>
 

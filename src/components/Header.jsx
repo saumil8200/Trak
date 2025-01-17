@@ -2,7 +2,7 @@
 function Header({ exportAnimes, importAnimes }) {
 	return (
 	  <header className="py-4">
-		<div className="w-[80%] md:w-[80%] mx-auto">
+		<div className="w-[80%] md:w-[60%] mx-auto">
 		  <div className="flex space-x-4">
 			<button 
 			  onClick={exportAnimes} 
