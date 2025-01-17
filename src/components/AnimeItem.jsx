@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useAnime } from "../contexts/AnimeContext";
 import { useState } from "react";
 
@@ -29,9 +29,17 @@ function AnimeItem({ anime }) {
             className="text-xl bg-gray-100 px-4 py-1 w-full"
           />
         ) : (
-          <Link to={`/anime/${anime.id}`} className="text-xl font-bold">
+          // <Link to={`/anime/${anime.id}`} className="text-xl font-bold">
+          //   {anime.anime}
+          // </Link>
+          <a
+            href={`https://www.google.com/search?q=${encodeURIComponent(anime.anime)} anime`}
+            className="text-xl font-bold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {anime.anime}
-          </Link>
+          </a>
         )}
         {/* <p className="text-gray-500">{anime.progress}</p> */}
       </div>
